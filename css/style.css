@@ -50,7 +50,7 @@ a:hover { color: mediumblue; }
   list-style: none;
 }
 .work li:before {
-  padding: 0 5px;3
+  padding: 0 5px;
   content: '↝';
 }
 
