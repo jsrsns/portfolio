@@ -11,7 +11,7 @@ p {
   line-height: 26px;
   color: #000;
 }
-ol {
+/* ol {
   margin: 0;
   list-style-type: lower-roman;
   list-style-position: outside;
@@ -19,7 +19,7 @@ ol {
 li {
   font-size: 24px;
   line-height: 26px;
-}
+} */
 a { color: #000; }
 a:hover { color: mediumblue; }
 
@@ -37,6 +37,23 @@ a:hover { color: mediumblue; }
 #header li {
   cursor: pointer;
 }
+
+.social li {
+  display: block;
+  padding: 2px;
+  list-style: none;
+}
+
+.work li {
+  display: block;
+  padding: 2px;
+  list-style: none;
+}
+.work li:before {
+  padding: 0 5px;3
+  content: '↝';
+}
+
 .wrapper {
  position: fixed;
  top: 0;
