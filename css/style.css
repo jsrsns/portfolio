@@ -19,6 +19,7 @@ p {
 }
 ul {
   margin: 0;
+  list-style-position: outside;
 }
 li {
   font-size: 24px;
