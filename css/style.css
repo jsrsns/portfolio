@@ -1,11 +1,15 @@
+/* General */
 * { box-sizing: border-box; }
-
 body {
   font-family: 'Arial', sans-serif;
   font-size: 24px;
   line-height: 26px;
 }
+::-webkit-scrollbar { display: none; }
 
+/* Titles and text styling */
+a { color: #000; }
+a:hover { color: #0000cd; }
 p {
   margin: 0;
   padding: 0;
@@ -13,18 +17,27 @@ p {
   line-height: 26px;
   color: #000;
 }
-/* ol {
+ul {
   margin: 0;
-  list-style-type: lower-roman;
-  list-style-position: outside;
 }
 li {
   font-size: 24px;
   line-height: 26px;
-} */
-a { color: #000; }
-a:hover { color: mediumblue; }
+}
 
+/* Design Elements */
+.wrapper {
+ position: fixed;
+ top: 0;
+ right:
+ bottom
+ left: 50vw;
+ z-index: 100;
+ text-align: center;
+ border-left: 1px solid #000;
+}
+
+/* Header */
 #header {
   position: fixed;
   top: 0;
@@ -39,13 +52,6 @@ a:hover { color: mediumblue; }
 #header li {
   cursor: pointer;
 }
-
-.social li {
-  display: block;
-  padding: 2px;
-  list-style: none;
-}
-
 .work li {
   display: block;
   padding: 2px;
@@ -56,15 +62,7 @@ a:hover { color: mediumblue; }
   content: '↝';
 }
 
-.wrapper {
- position: fixed;
- top: 0;
- right:
- bottom
- left: 50vw;
- z-index: 100;
- text-align: center;
-}
+/* Pagination */
 .pagination {
   position: absolute;
   bottom: 20px;
