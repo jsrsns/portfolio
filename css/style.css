@@ -19,7 +19,6 @@ p {
 }
 ul {
   margin: 0;
-  list-style-type: none;
 }
 li {
   font-size: 24px;
@@ -72,12 +71,17 @@ li {
     padding-bottom: 15vh;
   }
 }
-.work li {
+.list {
+  list-style-type: none;
+}
+.list li {
   display: block;
   padding: 2px;
-  list-style: none;
+  list-style-type: none;
 }
 .work li:before {
+  position: absolute;
+  left: 15px;
   padding: 0 5px;
   content: '↝';
 }
