@@ -76,9 +76,16 @@ li {
   padding: 2px;
   list-style: none;
 }
-.work li:before {
+/*.work li:before {
   padding: 0 5px;
   content: '↝';
+}*/
+.architect:before,
+.flag:before,
+.sorting:before,
+.isometric:before {
+  padding: 0 5px;
+  content: '↝';;
 }
 
 /* Pagination */
