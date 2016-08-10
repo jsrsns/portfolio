@@ -46,6 +46,7 @@ li {
   .wrapper {
     top: 90vh;
     left: 0;
+    border: none;
   }
 }
 
