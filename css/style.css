@@ -30,6 +30,10 @@ li {
     max-width: 60vw;
   }
 }
+.black {
+  color: #fff;
+  background-color: #000;
+}
 
 /* Design Elements */
 .wrapper {
