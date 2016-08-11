@@ -1,7 +1,11 @@
 $(document).ready(function() {
   
   $('#header li').click(function() {
+    
+    $('#content').empty();
+    
   	var selected = $(this).attr('class');
+  	
   	console.log(selected);
   	
   	if (selected === 'sorting') {
