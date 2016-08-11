@@ -7,6 +7,6 @@ $(document).ready(function() {
   
   if (selected === '.sorting') {
     $('#content').append('<img src="' + "/img/Flag.svg" + '"/>');
-  });
+  }
   
 });
