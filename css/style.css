@@ -75,6 +75,7 @@ li {
     padding-bottom: 15vh;
   }
 }
+.info { margin-bottom: 15px; }
 .list {
   list-style-type: none;
 }
