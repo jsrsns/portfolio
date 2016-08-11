@@ -95,7 +95,7 @@ img {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  #header {
+  #left {
     right: 0;
     padding-bottom: 15vh;
   }
