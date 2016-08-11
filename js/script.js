@@ -1,9 +1,8 @@
 $(document).ready(function() {
   
-  var selected = $(this).attr('class');
-  
   $('#header li').click(function() {
-			console.log(selected);
+  	var selected = $(this).attr('class');
+  	console.log(selected);
   });
   
 });
