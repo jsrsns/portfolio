@@ -5,7 +5,7 @@ $(document).ready(function() {
   	console.log(selected);
   	
   	if (selected === 'sorting') {
-  	  $('#content').append('<img src="' + "/img/Flag.svg" + '"/>');
+  	  $('#content').append('<img src="/img/Flag.svg"/>');
   }
   });
   
