@@ -1,6 +1,6 @@
 $(document).ready(function() {
   
-  $('#header li').click(function() {
+  $('#left li').click(function() {
     
     $('#content').empty();
     
@@ -23,7 +23,7 @@ $(document).ready(function() {
   	}
   });
   
-  $('.info').click(function() {
+  $('.header').click(function() {
     $('.pagination').hide();
     $('#content').empty();
   });
