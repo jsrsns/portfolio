@@ -40,13 +40,13 @@ img {
     max-width: 60vw;
   }
 }
-.black {
+.header {
   color: #fff;
   background-color: #000;
 }
 
 /* Design Elements */
-.wrapper {
+.right {
  position: fixed;
  top: 0;
  right: 0;
@@ -57,15 +57,15 @@ img {
  border-left: 1px solid #000;
 }
 @media screen and (max-width: 768px) {
-  .wrapper {
+  .right {
     top: 90vh;
     left: 0;
     border: none;
   }
 }
 
-/* Header */
-#header {
+/* left */
+#left {
   position: fixed;
   top: 0;
   right: 50vw;
@@ -76,7 +76,7 @@ img {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
-#header li {
+#left li {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
