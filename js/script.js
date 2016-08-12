@@ -1,36 +1,39 @@
 $(document).ready(function() {
   
-  $('#left li').click(function() {
+  $('#left li').click(function() { // click an item in the list
     
-    $('#content').empty();
+    $('#content').empty(); // clear the content
     
-  	var selected = $(this).attr('class');
+  	var selected = $(this).attr('class'); // get the class of the item in the list
   	
-  	console.log(selected);
+  	console.log(selected); // log the class of the selected item (for debug only)
   	
-  	if (selected === 'sorting') {
+  	if (selected === 'sorting') { // for this selection
+  	  $('.info').hide(); // hide the info
+  	  $('#content').append('<img src="/img/Flag.svg"/>'); // add image to content
+  	  $('.pagination').show(); // show the pagination
+  	}
+  	else if (selected === 'architect') {
   	  $('.info').hide();
-  	  $('.pagination').show();
-  	  $('#content').append('<img src="/img/Flag.svg"/>');
-  	} else if (selected === 'architect') {
-  	  $('.info').hide();
-  	  $('.pagination').show();
   	  $('#content').append('<img src="/img/Corner.svg"/>');
-  	} else if (selected === 'isometric') {
-  	  $('.info').hide();
   	  $('.pagination').show();
+  	}
+  	else if (selected === 'isometric') {
+  	  $('.info').hide();
   	  $('#content').append('<img src="/img/Stairs.svg"/>');
-  	} else if (selected === 'flag') {
-  	  $('.info').hide();
   	  $('.pagination').show();
+  	}
+  	else if (selected === 'flag') {
+  	  $('.info').hide();
   	  $('#content').append('<img src="/img/Beam.svg"/>');
+  	  $('.pagination').show();
   	}
   });
   
   $('.header').click(function() {
-    $('.info').show();
-    $('.pagination').hide();
-    $('#content').empty();
+    $('.info').show(); // show the info
+    $('#content').empty(); // hide the content
+    $('.pagination').hide(); // hide the pagination
   });
   
 });
