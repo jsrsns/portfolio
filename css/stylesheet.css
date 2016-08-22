@@ -113,7 +113,7 @@ img {
   position: absolute;
   left: 15px;
   padding: 0 5px;
-  content: '&#8605;';
+  content: &#8605;
 }
 
 /* Pagination */
