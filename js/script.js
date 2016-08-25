@@ -30,6 +30,8 @@ $(document).ready(function() {
   	  
   	  var images = ["/img/Stairs.svg","/img/Beam.svg","/img/Floor.svg"];
   	  index=0;
+  	  
+  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	}
   	
   	else if (selected === 'flag') {
