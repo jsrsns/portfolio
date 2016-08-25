@@ -21,10 +21,12 @@ $(document).ready(function() {
   	  
   	  $('.next').click(function(){
   	    index = (index==sortingimages.length-1)?0:(index+1);
+  	    console.log(index);
   	  });
   	  
   	  $('.prev').click(function(){
   	    index = (index==0)?(sortingimages.length-1):(index-1);
+  	    console.log(index);
   	  });
   	}
   	
