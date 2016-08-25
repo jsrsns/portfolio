@@ -17,7 +17,7 @@ $(document).ready(function() {
   	  
   	  index=0;
   	  
-  	  $('#content').append('<img src="+sortingimages[index]+"/>'); // add image to content
+  	  $('#content').append('<img src="'+sortingimages[index]+'"/>'); // add image to content
   	  
   	  $('.next').click(function(){
   	    index = (index==sortingimages.length-1)?0:(index+1);
