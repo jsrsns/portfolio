@@ -22,7 +22,7 @@ $(document).ready(function() {
   	  $('.next').click(function(){
   	    index = (index==sortingimages.length-1)?0:(index+1);
   	    
-  	  $('#content').attr('src',sortingimages[index]);   
+  	  $('#content img').attr('src',sortingimages[index]);   
   	  });
   	  
   	  $('.prev').click(function(){
