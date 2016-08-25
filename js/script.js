@@ -10,19 +10,36 @@ $(document).ready(function() {
   	
   	if (selected === 'sorting') { // for this selection
   	  $('.info').hide(); // hide the info
-  	  $('#content').append('<img src="/img/Flag.svg"/>'); // add image to content
+  	  
   	  $('.pagination').show(); // show the pagination
+  	  
+  	  var sortingimages = ["/img/Flag.svg","/img/Corner.svg","/img/Ladder.svg"];
+  	  
+  	  index=0;
+  	  
+  	  $('#content').append('<img src="+sortingimages[index]+"/>'); // add image to content
+  	  
+  	  $('.next').click(function(){
+  	    index = (index==sortingimages.length-1)?0:(index+1);
+  	  });
+  	  
+  	  $('.prev').click(function(){
+  	    index = (index==0)?(sortingimages.length-1):(index-1);
+  	  });
   	}
+  	
   	else if (selected === 'architect') {
   	  $('.info').hide();
   	  $('#content').append('<img src="/img/Corner.svg"/>');
   	  $('.pagination').show();
   	}
+  	
   	else if (selected === 'isometric') {
   	  $('.info').hide();
   	  $('#content').append('<img src="/img/Stairs.svg"/>');
   	  $('.pagination').show();
   	}
+  	
   	else if (selected === 'flag') {
   	  $('.info').hide();
   	  $('#content').append('<img src="/img/Beam.svg"/>');
