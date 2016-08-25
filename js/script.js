@@ -18,11 +18,11 @@ $(document).ready(function() {
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	  $('.next').click(function(){
   	    index = (index==images.length-1)?0:(index+1);
-  	  $('#content img').attr('src',sortingimages[index]);   
+  	  $('#content img').attr('src',images[index]);   
   	  });
   	  $('.prev').click(function(){
-  	    index = (index==0)?(sortingimages.length-1):(index-1);
-  	  $('#content img').attr('src',sortingimages[index]);
+  	    index = (index==0)?(images.length-1):(index-1);
+  	  $('#content img').attr('src',images[index]);
   	  });
   	}
   	
