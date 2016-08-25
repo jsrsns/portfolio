@@ -16,14 +16,6 @@ $(document).ready(function() {
   	  index=0;
   	  
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
-  	  $('.next').click(function(){
-  	    index = (index==images.length-1)?0:(index+1);
-  	  $('#content img').attr('src',images[index]);   
-  	  });
-  	  $('.prev').click(function(){
-  	    index = (index==0)?(images.length-1):(index-1);
-  	  $('#content img').attr('src',images[index]);
-  	  });
   	}
   	
   	else if (selected === 'architect') {
@@ -37,9 +29,13 @@ $(document).ready(function() {
   	  
   	  var images = ["/img/Stairs.svg","/img/Beam.svg","/img/Floor.svg"];
   	  index=0;
-  	  
-  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
-  	  $('.next').click(function(){
+  	}
+  	
+  	else if (selected === 'flag') {
+  	  $('.info').hide();
+  	  $('.pagination').hide();
+  	}
+  	$('.next').click(function(){
   	    index = (index==images.length-1)?0:(index+1);
   	  $('#content img').attr('src',images[index]);   
   	  });
@@ -47,12 +43,6 @@ $(document).ready(function() {
   	    index = (index==0)?(images.length-1):(index-1);
   	  $('#content img').attr('src',images[index]);
   	  });
-  	}
-  	
-  	else if (selected === 'flag') {
-  	  $('.info').hide();
-  	  $('.pagination').hide();
-  	}
   });
   
   $('.header').click(function() {
