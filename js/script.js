@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('#content').empty(); // clear the content
     
   	var selected = $(this).attr('class'); // get the class of the item in the list
+  	var images = [];
   	
   	console.log(selected); // log the class of the selected item (for debug only)
   	
@@ -35,14 +36,15 @@ $(document).ready(function() {
   	  $('.info').hide();
   	  $('.pagination').hide();
   	}
+  	
   	$('.next').click(function(){
-  	    index = (index==images.length-1)?0:(index+1);
-  	  $('#content img').attr('src',images[index]);   
-  	  });
-  	  $('.prev').click(function(){
-  	    index = (index==0)?(images.length-1):(index-1);
-  	  $('#content img').attr('src',images[index]);
-  	  });
+  	  index = (index==images.length-1)?0:(index+1);
+    $('#content img').attr('src',images[index]);   
+  	});
+  	$('.prev').click(function(){
+  	  index = (index==0)?(images.length-1):(index-1);
+    $('#content img').attr('src',images[index]);
+    });
   });
   
   $('.header').click(function() {
