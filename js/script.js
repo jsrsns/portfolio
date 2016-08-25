@@ -28,7 +28,7 @@ $(document).ready(function() {
   	  $('.prev').click(function(){
   	    index = (index==0)?(sortingimages.length-1):(index-1);
   	    
-  	  $('#content').attr('src',sortingimages[index]);
+  	  $('#content img').attr('src',sortingimages[index]);
   	  });
   	}
   	
