@@ -10,24 +10,18 @@ $(document).ready(function() {
   	
   	if (selected === 'sorting') { // for this selection
   	  $('.info').hide(); // hide the info
-  	  
   	  $('.pagination').show(); // show the pagination
   	  
-  	  var sortingimages = ["/img/Flag.svg","/img/Corner.svg","/img/Ladder.svg"];
-  	  
+  	  var images = ["/img/Flag.svg","/img/Corner.svg","/img/Ladder.svg"];
   	  index=0;
   	  
-  	  $('#content').append('<img src="'+sortingimages[index]+'"/>'); // add image to content
-  	  
+  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	  $('.next').click(function(){
-  	    index = (index==sortingimages.length-1)?0:(index+1);
-  	    
+  	    index = (index==images.length-1)?0:(index+1);
   	  $('#content img').attr('src',sortingimages[index]);   
   	  });
-  	  
   	  $('.prev').click(function(){
   	    index = (index==0)?(sortingimages.length-1):(index-1);
-  	    
   	  $('#content img').attr('src',sortingimages[index]);
   	  });
   	}
