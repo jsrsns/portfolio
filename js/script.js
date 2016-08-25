@@ -28,20 +28,30 @@ $(document).ready(function() {
   	
   	else if (selected === 'architect') {
   	  $('.info').hide();
-  	  $('#content').append('<img src="/img/Corner.svg"/>');
-  	  $('.pagination').show();
+  	  $('.pagination').hide();
   	}
   	
   	else if (selected === 'isometric') {
   	  $('.info').hide();
-  	  $('#content').append('<img src="/img/Stairs.svg"/>');
   	  $('.pagination').show();
+  	  
+  	  var images = ["/img/Stairs.svg","/img/Beam.svg","/img/Floor.svg"];
+  	  index=0;
+  	  
+  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
+  	  $('.next').click(function(){
+  	    index = (index==images.length-1)?0:(index+1);
+  	  $('#content img').attr('src',images[index]);   
+  	  });
+  	  $('.prev').click(function(){
+  	    index = (index==0)?(images.length-1):(index-1);
+  	  $('#content img').attr('src',images[index]);
+  	  });
   	}
   	
   	else if (selected === 'flag') {
   	  $('.info').hide();
-  	  $('#content').append('<img src="/img/Beam.svg"/>');
-  	  $('.pagination').show();
+  	  $('.pagination').hide();
   	}
   });
   
