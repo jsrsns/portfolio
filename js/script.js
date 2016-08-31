@@ -20,7 +20,7 @@ $(document).ready(function() {
   	}
   	
   	else if (selected === 'architect') {
-  	  $('.info').hide();
+  	  $('.info').show();
   	  $('.pagination').hide();
   	}
   	
@@ -35,7 +35,7 @@ $(document).ready(function() {
   	}
   	
   	else if (selected === 'flag') {
-  	  $('.info').hide();
+  	  $('.info').show();
   	  $('.pagination').hide();
   	}
   	
