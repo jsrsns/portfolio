@@ -65,7 +65,7 @@ img {
 }
 .info {
   position: absolute;
-  top: 10vh;
+  top: 5vh;
   margin: auto;
   max-width: 90%;
   max-height: 500px;
