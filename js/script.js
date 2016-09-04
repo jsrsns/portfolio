@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('prev').removeClass('active');
     $('next)').addClass('active');
     
-    var selected = $(this).attr('class)';
+    var selected = $(this).attr('class');
     
     images.length = 0;
     
