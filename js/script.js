@@ -13,7 +13,7 @@ $(document).ready(function() {
   	  $('.info').hide(); // hide the info
   	  $('.pagination').show(); // show the pagination
   	  
-  	  var images = ["/img/Flag.svg","/img/Corner.svg","/img/Ladder.svg"];
+  	  var images = ["/portfolio/img/sorting-1","/portfolio/img/sorting-2","/portfolio/img/sorting-3","/portfolio/img/sorting-4"];
   	  index=0;
   	  
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
@@ -23,7 +23,7 @@ $(document).ready(function() {
   	  $('.info').hide();
   	  $('.pagination').show();
   	  
-  	  var images = ["/img/Stairs.svg","/img/Beam.svg","/img/Floor.svg"];
+  	  var images = ["/portfolio/img/iso-1","/portfolio/img/iso-2","/portfolio/img/iso-3","/portfolio/img/iso-4"];
   	  index=0;
   	  
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
