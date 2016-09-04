@@ -40,15 +40,35 @@ $(document).ready(function() {
     else if ( x > b) {
       x++;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '":>');
+      $('#content').append('<img src"' + images[x] + '"/>');
       $('.next').removeClass('active');
       $('.prev').addClass('active');
       console.log('continue', x);
     }
     else {
-      x++
+      x++;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '":>');
+      $('#content').append('<img src"' + images[x] + '"/>');
+      $('.prev').addClass('active');
+      console.log('next', x, a, b);
+    }
+  });
+  $('.prev').click(function() {
+    if (x < 2) {
+      console.log('start', x);
+    }
+    else if (x < 3) {
+      x--;
+      $('#content').empty();
+      $('#content').append('<img src"' + images[x] + '"/>');
+      $('.prev').removeClass('active');
+      $('.next').addClass('active');
+      console.log('back', x);
+    }
+    else {
+      x--;
+      $('#content').empty();
+      $('#content').append('<img src"' + images[x] + '"/>');
       $('.next').addClass('active');
       console.log('prev', x);
     }
