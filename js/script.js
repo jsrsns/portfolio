@@ -6,16 +6,18 @@ $(document).ready(function() {
     
   	var selected = $(this).attr('class'); // get the class of the item in the list
   	var images = [];
+  	var x;
+  	
+  	images.length = 0;
   	
   	console.log(selected); // log the class of the selected item (for debug only)
   	
   	if (selected === 'sorting') { // for this selection
   	  $('.info').hide(); // hide the info
   	  $('.pagination').show(); // show the pagination
-  	  
-  	  var images = ["/portfolio/img/sorting-1.png","/portfolio/img/sorting-2.gif","/portfolio/img/sorting-3.gif","/portfolio/img/sorting-4.gif"];
-  	  index=0;
-  	  
+  	  for (x = 1; x < 17; x++) {
+  	    images[x] = 'img/sorting-' + x + '.png';
+  	  }
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	}
   	
