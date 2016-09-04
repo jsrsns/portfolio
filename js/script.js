@@ -6,7 +6,7 @@ $(document).ready(function() {
   var list = function () {
     $('#content').empty();
     $('prev').removeClass('active');
-    $('next)').addClass('active');
+    $('next').addClass('active');
     
     var selected = $(this).attr('class');
     
