@@ -130,6 +130,9 @@ img {
   text-decoration: underline;
   cursor: pointer;
 }
+::selection {
+  background: transparent;
+}
 @media screen and (max-width: 768px) {
   .pagination {
     top: -15vh;
