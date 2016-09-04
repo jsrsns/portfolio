@@ -40,7 +40,7 @@ $(document).ready(function() {
     else if ( x > b) {
       x++;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '"/>');
+      $('#content').append('<img src="' + images[x] + '"/>');
       $('.next').removeClass('active');
       $('.prev').addClass('active');
       console.log('continue', x);
@@ -48,7 +48,7 @@ $(document).ready(function() {
     else {
       x++;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '"/>');
+      $('#content').append('<img src="' + images[x] + '"/>');
       $('.prev').addClass('active');
       console.log('next', x, a, b);
     }
@@ -60,7 +60,7 @@ $(document).ready(function() {
     else if (x < 3) {
       x--;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '"/>');
+      $('#content').append('<img src="' + images[x] + '"/>');
       $('.prev').removeClass('active');
       $('.next').addClass('active');
       console.log('back', x);
@@ -68,7 +68,7 @@ $(document).ready(function() {
     else {
       x--;
       $('#content').empty();
-      $('#content').append('<img src"' + images[x] + '"/>');
+      $('#content').append('<img src="' + images[x] + '"/>');
       $('.next').addClass('active');
       console.log('prev', x);
     }
