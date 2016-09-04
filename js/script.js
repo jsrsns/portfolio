@@ -15,7 +15,7 @@ $(document).ready(function() {
     if (selected === 'isometric') {
       $('.pagination').show();
       $('.info').hide();
-      images = ['', '/portfolio/img/iso-01.png', '/portfolio/img/iso-02.gif', '/portfolio/img/iso-03.gif', '/portfolio/img/iso-04.gif'];
+      images = ['', '/portfolio/img/iso-01.png', '/portfolio/img/iso-02.png', '/portfolio/img/iso-03.png', '/portfolio/img/iso-04.png'];
       $('#content').append('<img src="' + images[1] + '"/>');
       console.log(images);
     }
