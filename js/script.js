@@ -26,6 +26,11 @@ $(document).ready(function() {
       $('#content').append('<img src="' + images[1] + '"/>');
       console.log(images);
     }
+    else if (selected === 'flag') {
+      $('.pagination').show();
+      $('.info').hide();
+      $('#content').empty();
+    }
     
     x = 1
     
@@ -72,5 +77,9 @@ $(document).ready(function() {
       $('.next').addClass('active');
       console.log('prev', x);
     }
+  });
+  $('.header').click(function() {
+    $('#content').empty();
+    $('.pagination').hide();
   });
 });
