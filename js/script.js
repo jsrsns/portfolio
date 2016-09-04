@@ -16,7 +16,7 @@ $(document).ready(function() {
   	  $('.info').hide(); // hide the info
   	  $('.pagination').show(); // show the pagination
   	  for (x = 1; x < 17; x++) {
-  	    images[x] = 'img/sorting-' + x + '.png';
+  	    images[x] = 'img/sorting-' + x + '.gif';
   	  }
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	}
