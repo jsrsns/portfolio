@@ -1,55 +1,52 @@
 $(document).ready(function() {
   
-  $('#left li').click(function() { // click an item in the list
-    
-    $('#content').empty(); // clear the content
-    
-  	var selected = $(this).attr('class'); // get the class of the item in the list
-  	var images = [];
-  	var x;
-  	
-  	images.length = 0;
-  	
-  	console.log(selected); // log the class of the selected item (for debug only)
-  	
-  	if (selected === 'sorting') { // for this selection
-  	  $('.info').hide(); // hide the info
-  	  $('.pagination').show(); // show the pagination
-  	  for (x = 1; x < 17; x++) {
-  	    images[x] = 'img/sorting-' + x + '.gif';
-  	  }
-  	  $('#content').append('<img src="'+images[1]+'"/>'); // add image to content
-  	}
-  	
-  	else if (selected === 'isometric') {
-  	  $('.info').hide();
-  	  $('.pagination').show();
-  	  
-  	  var images = ["/portfolio/img/iso-1.png","/portfolio/img/iso-2.png","/portfolio/img/iso-3.png","/portfolio/img/iso-4.png"];
-  	  index=0;
-  	  
-  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
-  	}
-  	
-  	else if (selected === 'flag') {
-  	  $('.info').show();
-  	  $('.pagination').hide();
-  	}
-  	
-  	$('.next').click(function(){
-  	  index = (index==images.length-1)?0:(index+1);
-    $('#content img').attr('src',images[index]);   
-  	});
-  	$('.prev').click(function(){
-  	  index = (index==0)?(images.length-1):(index-1);
-    $('#content img').attr('src',images[index]);
-    });
-  });
+  var images = []
+  var x;
   
-  $('.header').click(function() {
-    $('.info').show(); // show the info
-    $('#content').empty(); // hide the content
-    $('.pagination').hide(); // hide the pagination
+  var list = function () {
+    $('#content').empty();
+    $('prev').removeClass('active');
+    $('next)').addClass('active');
+    
+    var selected = $(this).attr('class)';
+    
+    images.length = 0;
+    
+    if (selected === 'isometric') {
+      $('pagination').show();
+      images = ['', '/portfolio/img/iso-01.png', '/portfolio/img/iso-02.gif', '/portfolio/img/iso-03.gif', '/portfolio/img/iso-04.gif'];
+      $('#content').append('<img src="' + images[1] + '"/>');
+    }
+    else if (selected === 'sorting') {
+      $('pagination').show();
+      images = ['', '/portfolio/img/sorting-01.png', '/portfolio/img/sorting-02.gif', '/portfolio/img/sorting-03.gif', '/portfolio/img/sorting-04.gif'];
+      $('#content').append('<img src="' + images[1] + '"/>');
+    }
+    
+    x = 1
+    
+  }
+  $('#left li').on('click', list);
+  $('.next').click(function() {
+    var a = images.length - 2;
+    var b = images.length - 3;
+    if (x > a) {
+      console.log('end', x, images);
+    }
+    else if ( x > b) {
+      x++;
+      $('#content').empty();
+      $('#content').append('<img src"' + images[x] + '":>');
+      $('.next').removeClass('active');
+      $('.prev').addClass('active');
+      console.log('continue', x);
+    }
+    else {
+      x++
+      $('#content').empty();
+      $('#content').append('<img src"' + images[x] + '":>');
+      $('.next').addClass('active');
+      console.log('prev', x);
+    }
   });
-  
-});
+}
