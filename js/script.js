@@ -18,7 +18,7 @@ $(document).ready(function() {
   	  for (x = 1; x < 17; x++) {
   	    images[x] = 'img/sorting-' + x + '.gif';
   	  }
-  	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
+  	  $('#content').append('<img src="'+images[1]+'"/>'); // add image to content
   	}
   	
   	else if (selected === 'isometric') {
