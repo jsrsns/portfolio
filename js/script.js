@@ -19,11 +19,6 @@ $(document).ready(function() {
   	  $('#content').append('<img src="'+images[index]+'"/>'); // add image to content
   	}
   	
-  	else if (selected === 'architect') {
-  	  $('.info').show();
-  	  $('.pagination').hide();
-  	}
-  	
   	else if (selected === 'isometric') {
   	  $('.info').hide();
   	  $('.pagination').show();
