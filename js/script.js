@@ -5,22 +5,22 @@ $(document).ready(function() {
   
   var list = function () {
     $('#content').empty();
-    $('prev').removeClass('active');
-    $('next').addClass('active');
+    $('.prev').removeClass('active');
+    $('.next').addClass('active');
     
     var selected = $(this).attr('class');
     
     images.length = 0;
     
     if (selected === 'isometric') {
-      $('pagination').show();
-      $('info').hide();
+      $('.pagination').show();
+      $('.info').hide();
       images = ['', '/portfolio/img/iso-01.png', '/portfolio/img/iso-02.gif', '/portfolio/img/iso-03.gif', '/portfolio/img/iso-04.gif'];
       $('#content').append('<img src="' + images[1] + '"/>');
     }
     else if (selected === 'sorting') {
-      $('pagination').show();
-      $('info').hide();
+      $('.pagination').show();
+      $('.info').hide();
       images = ['', '/portfolio/img/sorting-01.png', '/portfolio/img/sorting-02.gif', '/portfolio/img/sorting-03.gif', '/portfolio/img/sorting-04.gif'];
       $('#content').append('<img src="' + images[1] + '"/>');
     }
