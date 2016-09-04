@@ -27,7 +27,7 @@ $(document).ready(function() {
       console.log(images);
     }
     else if (selected === 'flag') {
-      $('.pagination').show();
+      $('.pagination').hide();
       $('.info').hide();
       $('#content').empty();
     }
