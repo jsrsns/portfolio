@@ -22,7 +22,7 @@ $(document).ready(function() {
     else if (selected === 'sorting') {
       $('.pagination').show();
       $('.info').hide();
-      images = ['', '/portfolio/img/sorting-01.png', '/portfolio/img/sorting-02.gif', '/portfolio/img/sorting-03.gif', '/portfolio/img/sorting-04.gif'];
+      images = ['', '/portfolio/img/sorting-01.jpg', '/portfolio/img/sorting-02.gif', '/portfolio/img/sorting-03.jpg', '/portfolio/img/sorting-04.gif', '/portfolio/img/sorting-05.gif', '/portfolio/img/sorting-06.gif', '/portfolio/img/sorting-07.gif'];
       $('#content').append('<img src="' + images[1] + '"/>');
       console.log(images);
     }
