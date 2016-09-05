@@ -1,21 +1,21 @@
 $(document).ready(function() {
-  
+
   var images = []
   var x;
-  
+
   var list = function () {
     $('#content').empty();
     $('.prev').removeClass('active');
     $('.next').addClass('active');
-    
+
     var selected = $(this).attr('class');
-    
+
     images.length = 0;
-    
+
     if (selected === 'isometric') {
       $('.pagination').show();
       $('.info').hide();
-      images = ['', '/portfolio/img/iso-01.png', '/portfolio/img/iso-02.png', '/portfolio/img/iso-03.png', '/portfolio/img/iso-04.png'];
+      images = ['', '/portfolio/img/iso-01.jpg', '/portfolio/img/iso-02.jpg', '/portfolio/img/iso-03.jpg', '/portfolio/img/iso-04.jpg', '/portfolio/img/iso-05.jpg'];
       $('#content').append('<img src="' + images[1] + '"/>');
       console.log(images);
     }
@@ -31,9 +31,9 @@ $(document).ready(function() {
       $('.info').hide();
       $('#content').empty();
     }
-    
+
     x = 1
-    
+
   }
   $('#left li').on('click', list);
   $('.next').click(function() {
