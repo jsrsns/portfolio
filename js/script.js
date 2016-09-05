@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
     else if (selected === 'flag') {
       $('.pagination').hide();
-      $('.info').hide();
+      $('.info').show();
       $('#content').empty();
     }
     else if (selected === 'wave') {
