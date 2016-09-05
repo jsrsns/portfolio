@@ -86,5 +86,6 @@ $(document).ready(function() {
   $('.header').click(function() {
     $('#content').empty();
     $('.pagination').hide();
+    $('.info').show();
   });
 });
