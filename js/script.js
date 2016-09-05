@@ -34,7 +34,7 @@ $(document).ready(function() {
     else if (selected === 'wave') {
       $('.pagination').hide();
       $('.info').hide();
-      $('#content').append('<img src="./portfolio/img/wave.gif"/>');
+      $('#content').append('<img src="./img/wave.gif"/>');
     }
 
     x = 1
