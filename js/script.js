@@ -31,6 +31,11 @@ $(document).ready(function() {
       $('.info').hide();
       $('#content').empty();
     }
+    else if (selected === 'wave') {
+      $('.pagination').hide();
+      $('.info').hide();
+      $('#content').append('<img src="portfolio/img/wave.gif"/>');
+    }
 
     x = 1
 
